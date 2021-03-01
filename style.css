@@ -1,6 +1,10 @@
 
 /* Universal styles */
 
+html {
+    scroll-behavior: smooth;
+}
+
 main {
     font-family: 'Comic Sans MS','Times New Roman', Times, serif;
 }
@@ -9,6 +13,12 @@ h3.signature {
     font-family:'Brush Script MT','Times New Roman', Times, serif;
     align-self:flex-end;
 }
+
+.footer-signature {
+    font-family:'Brush Script MT','Times New Roman', Times, serif;
+    text-align: center;
+}
+
 #main_menu_name {
     font-family: 'Brush Script MT','Times New Roman', Times, serif;
     padding-left: 5%;
