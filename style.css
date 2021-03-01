@@ -89,6 +89,10 @@ section.details {
     background-color: #f2f2f2;
 }
 
+section.projects h1{
+	text-align: center;
+}
+
 section.projects img {
     width: 90%;
 }
