@@ -1,0 +1,152 @@
+
+/* Universal styles */
+
+main {
+    font-family: 'Comic Sans MS','Times New Roman', Times, serif;
+}
+
+h3.signature {
+    font-family:'Brush Script MT','Times New Roman', Times, serif;
+    align-self:flex-end;
+}
+#main_menu_name {
+    font-family: 'Brush Script MT','Times New Roman', Times, serif;
+    padding-left: 5%;
+    font-size: larger;
+    text-align: center;
+}
+
+section.main img {
+    width: 60%;
+    border-radius: 2%;
+    align-self: center;
+}
+
+.flex_group {
+    display:flex;
+    flex-direction: column;
+    padding: 5%;
+}
+
+.flex_subgroup {
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Navigation bar */
+
+header {
+    display: flex;
+    flex-direction: column;
+}
+
+header nav {
+    display: flex;
+    flex-direction: row;
+}
+
+header nav ul {
+    display: flex;
+    flex-direction: row;
+}
+
+header nav ul li {
+    list-style-type: none;
+    margin-right: 10px;
+}
+
+header nav ul li a {
+    color:black;
+    text-decoration: none;
+    padding: 0 20px 0 0;
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+
+header nav ul li a:hover {
+    color: burlywood;
+}
+
+
+/* Content */
+
+section.filler {
+    position: relative;
+    background-image: url(images/index/background.jpg);
+    background-size:cover;
+    padding: 10%;
+}
+section.filler p {
+    display:none;
+}
+
+section.main {
+    background-color: white;
+}
+
+section.details {
+    background-color: #f2f2f2;
+}
+
+section.projects img {
+    width: 90%;
+}
+
+
+@media all and (min-width: 1000px) {
+    
+    header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    header nav ul li {
+        margin-top: 15px;
+    }
+    
+    section {
+        padding: 0 10%;
+    }
+
+    .flex_group {
+        flex-direction: row;
+        padding: 10%;
+    }
+
+    /* The quote appears only on larger screens */
+    section.filler p {
+        display:flex;
+        width: 40%;
+        position:absolute;
+        top: 0;
+        right: 0;
+        text-align: right;
+        justify-content: right;
+    }
+}
+
+/* Contacts form */
+
+form {
+    padding-right: 0px;
+}
+
+form label{
+    display: block;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+form textarea {
+    height: 160px;
+}
+
+.contacts_subgroup {
+    margin-top: 10px;
+}
